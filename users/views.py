@@ -1,30 +1,4 @@
-# from rest_framework import generics, permissions
-# from rest_framework.views import APIView
-# from rest_framework.response import Response
-# from .models import UserProfiles
-# from .serializers import UserSerializer, UserProfileSerializer
-
-# class RegisterView(generics.CreateAPIView):
-#     serializer_class = UserSerializer
-#     permission_classes = [permissions.AllowAny]
-
-# class ProfileView(APIView):
-#     permission_classes = [permissions.IsAuthenticated]
-
-#     def get(self, request):
-#         serializer = UserProfileSerializer(request.user.profile)
-#         return Response(serializer.data)
-
-#     def put(self, request):
-#         serializer = UserProfileSerializer(request.user.profile, data=request.data, partial=True)
-#         serializer.is_valid(raise_exception=True)
-#         serializer.save()
-#         return Response(serializer.data)
-
-
 # with the cache redis for profile faster ..
-
-
 from django.core.cache import cache
 from rest_framework import generics, permissions
 from rest_framework.views import APIView
