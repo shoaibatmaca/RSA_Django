@@ -26,30 +26,6 @@ Instead of using a shared secret (`HS256`), this project uses **RSA public/priva
 This ensures **asymmetric encryption**, better for microservice communication.
 
 ---
-
-## 📁 Project Structure
-RSA_Django/
-│
-├── core/ # Django project root
-│ └── settings.py
-│ └── urls.py
-│
-├── users/ # Custom user app
-│ ├── models.py # Custom User & UserProfile
-│ ├── views.py # RegisterView, ProfileView (cached)
-│ ├── serializers.py
-│ └── urls.py
-│
-├── keys/ # Contains RSA .pem keys
-│ ├── private.pem
-│ └── public.pem
-│
-├── generate_keys.py # Script to generate RSA key pair
-├── manage.py
-└── README.md
-
----
-
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
