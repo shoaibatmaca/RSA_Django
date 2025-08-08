@@ -10,6 +10,6 @@ generate_keys.py
 
 scripts/
 
-# Optional: Ignore all files named guide.md anywhere in the project
 
-\*\*/guide.md
+# Optional: Ignore all files named guide.md anywhere in the project
+guide.md
