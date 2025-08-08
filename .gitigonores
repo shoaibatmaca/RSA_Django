@@ -9,3 +9,7 @@ generate_keys.py
 # Optional: ignore all scripts folder if you keep dev tools there
 
 scripts/
+
+
+# Optional: Ignore all files named guide.md anywhere in the project
+**/guide.md
