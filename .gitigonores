@@ -1,0 +1,11 @@
+# RSA keys
+
+\*.pem
+
+# Key generation script (if not meant for public)
+
+generate_keys.py
+
+# Optional: ignore all scripts folder if you keep dev tools there
+
+scripts/
