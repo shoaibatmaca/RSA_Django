@@ -123,11 +123,9 @@ SIMPLE_JWT = {
 }
 ```
 
-✍️ Author
-Muhammad Shoaib
-Backend Developer | Django & DRF | Fintech & Trading Systems
-GitHub
+### ✍️ Author
+Muhammad Shoaib | Backend Developer 
 ---
 
-⭐ License
+### ⭐ License
 This project is open-source and free to use under the MIT License.
