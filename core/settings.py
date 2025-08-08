@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    "jazzmin", 
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -53,6 +54,36 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+
+
+
+# jazzmin third party library used to enhanced and better admin panel 
+JAZZMIN_SETTINGS = {
+    "site_title": "AuthMicro Admin",
+    "site_header": "Auth Dashboard",
+    "welcome_sign": "Welcome to Auth Service Admin Panel",
+    "copyright": "AuthService",
+    "show_sidebar": True,
+    "navigation_expanded": True,
+    "order_with_respect_to": ["users.User", "users.UserProfiles"],
+    "icons": {
+        "users.User": "fas fa-user",
+        "users.UserProfiles": "fas fa-id-card",
+    }
+}
+
+
+JAZZMIN_UI_TWEAKS = {
+    "theme": "cosmo",  # or darkly, litera, lux, minty, slate, etc.
+    "dark_mode_theme": "darkly",  # toggle dark mode
+    "navbar_small_text": False,
+    "sidebar_small_text": False,
+    "footer_small_text": False,
+    "body_small_text": False,
+}
+
+
 
 ROOT_URLCONF = 'core.urls'
 
